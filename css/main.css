@@ -1,0 +1,220 @@
+.centralBlock {
+  min-height: 700px;
+  min-width: 100px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  color: #7a1f1f;
+}
+.centralBlock .heading {
+  padding: 2vw;
+  font-size: 24px;
+  font-weight: bold;
+}
+.centralBlock .menuFlex {
+  background-color: #d8dde1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.centralBlock .menuFlex span {
+  background-color: #808080;
+}
+.centralBlock .menuFlex .menuItem {
+  padding: 10px;
+}
+.centralBlock .menuFlex .menuItem a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #7a1f1f;
+}
+.centralBlock .menuFlex .menuItem a:hover {
+  color: #fff;
+}
+.centralBlock .menuFlex .menuItem:hover {
+  background-color: #808080;
+}
+.centralBlock .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+}
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+}
+.columnFlex {
+  display: flex;
+  flex-direction: column;
+}
+details .rowFlex {
+  align-items: center;
+}
+details .columnFlex {
+  align-items: flex-start;
+}
+.options {
+  margin: 10px;
+  padding: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.textBlock {
+  padding: 10px/2;
+  margin: 10px/2;
+}
+.textBlock .imageBlock {
+  padding: 10px;
+  float: right;
+  width: 20%;
+  overflow: hidden;
+}
+p {
+  line-height: 1;
+  margin: 1vw;
+  text-align: justify;
+  font-size: 14px;
+}
+.textFlex .textBlock {
+  padding: 10px/2;
+  margin: 10px/2;
+  width: 33.33%;
+}
+.videoBlock {
+  vertical-align: middle;
+}
+.videoBlock video {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.content .imagesFlexItem {
+  width: 100%;
+}
+.imagesFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 1vw;
+}
+.imagesFlexItem {
+  width: 33.33%;
+  overflow: hidden;
+}
+.imagesWithRef {
+  width: 33.33%;
+}
+.imagesWithRef a .imagesFlexItem {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .centralBlock {
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .centralBlock .heading {
+    text-align: center;
+  }
+  .centralBlock .menuFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .centralBlock .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+  }
+  .rowFlex {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .columnFlex p {
+    text-align: center;
+  }
+  .columnFlex .textBlock p {
+    text-align: justify;
+  }
+  .rowFlex .columnFlex p {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .textBlock {
+    padding: 10px/2;
+    margin: 10px/2;
+  }
+  .textBlock .imageBlock {
+    margin: 10px;
+    float: none;
+    margin: auto;
+    width: 50%;
+  }
+  .textBlock .imageBlock p {
+    line-height: 2;
+    margin: 10px;
+    text-align: justify;
+    word-spacing: 1px;
+  }
+}
+@media (max-width: 600px) {
+  .videoBlock {
+    padding: 0px;
+    vertical-align: middle;
+  }
+  .videoBlock video {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .imagesFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .imagesFlexItem {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .tableBlock {
+    width: 100%;
+  }
+  .tableBlock table {
+    font-size: 10px;
+    width: 80%;
+  }
+}
+.tableBlock {
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid #7a1f1f;
+}
