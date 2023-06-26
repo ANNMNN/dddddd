@@ -1,0 +1,78 @@
+padding = 10px
+indentValue = 2vw
+color = #7a1f1f
+textColor = #7a1f1f
+menuBarColor = #D8DDE1
+hoverColor = grey
+
+div
+	//border 1px solid black
+
+.centralBlock
+	min-height 700px
+	min-width 100px
+	//padding indentValue
+	//margin @padding
+	background-color #f7f7f7
+	display flex
+	flex-direction column
+	color textColor
+	.heading
+		padding indentValue
+		font-size 24px
+		font-weight bold
+	.menuFlex
+		background-color menuBarColor
+		display flex
+		flex-direction row
+		justify-content center
+		//column-gap indentValue
+		span
+			background-color grey
+		.menuItem
+			padding padding
+			a
+				text-decoration none
+				font-weight: bold
+				color textColor
+			a:hover
+				color white
+			&:hover
+				background-color hoverColor
+	.content
+		width 80%
+		display flex
+		flex-direction column
+		margin auto
+		padding padding
+
+.rowFlex
+	display flex
+	flex-direction row
+
+.columnFlex
+	display flex
+	flex-direction column
+
+details
+	.rowFlex
+		align-items center
+	.columnFlex
+		align-items: flex-start
+
+.options
+	margin padding
+	padding @margin
+
+@import textBlock
+@import videoBlock
+@import rowOfImages
+@import mainMedia
+@import tableBlock
+
+
+
+
+
+
+
